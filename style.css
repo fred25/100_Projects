@@ -1,0 +1,19 @@
+html{
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    margin: 5vh 8vw;
+}
+
+h1{
+    font-size: 50px;
+    transition: .3s;
+    cursor: initial;
+}
+
+h1:hover{
+    color: rgb(192, 37, 37);
+}
