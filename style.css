@@ -15,9 +15,10 @@ header a{
     color: rgb(79, 212, 212);
 }
 
-a{
+.project{
     text-decoration: none;
     color: rgb(255, 240, 240);
+    margin: 15px;
 }
 
 .description{

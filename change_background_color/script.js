@@ -151,6 +151,6 @@ const CSS_COLOR_NAMES = [
   ];
 
 function changeColor(){
-    let index = parseInt(Math.random() * CSS_COLOR_NAMES.length);
+    let index = parseInt(Math.random() * (CSS_COLOR_NAMES.length+1));
     style.innerHTML = `body{ background-color: ${CSS_COLOR_NAMES[index]}; `;
 }
