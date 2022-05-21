@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Quotes</title>
+
+    <link rel="stylesheet" href="/reset.css">
+
+    <style>
+
+        body{
+            background-color: rgb(156, 146, 133);
+            display: flex;
+            justify-content: center;
+        }
+
+        .wrapper{
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 30vh;
+            margin: 30vh 20vw;
+            background-color: antiquewhite;
+            border-radius: 30px;
+        }
+
+        button{
+            background-color: cadetblue;
+            color: whitesmoke;
+            border: none;
+            font-size: 25px;
+            border-radius: 5px;
+            padding: 10px;
+            margin-top: 50px;
+            box-shadow: 3px 3px 0px rgba(0, 0, 0, 0.582);
+            transition: .5s;
+        }
+
+        button:hover{
+            transform: scale(105%);
+        }
+
+        #quote{
+            color: gray;
+            font-family:  Helvetica, Arial, sans-serif;
+            margin: 40px;
+            font-size: 30px;
+        }
+
+        #author{
+            color: cadetblue;
+            align-self: flex-end;
+            margin-right: 40px;
+            margin-bottom: 30px;
+            font-family: Helvetica, Arial, sans-serif;
+            font-style: italic;
+            font-size: 20px;
+        }
+
+    </style>
+
+</head>
+    <body>
+        
+        <div class="wrapper">
+            
+            <button onclick="randomQuote()">Generate!</button>
+            <p id="quote">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur sint iste optio placeat dolor labore, reprehenderit ipsum aspernatur blanditiis maiores. </p>
+            <p id="author">-author</p>
+
+        </div>
+
+        <script src="script.js"></script>
+
+    </body>
+</html>
