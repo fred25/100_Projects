@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pass the Message</title>
+
+    <link rel="stylesheet" href="/reset.css">
+
+    <style>
+
+        html{
+            background-color: cornflowerblue;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: Helvetica, Arial, sans-serif;
+        }
+
+        .wrapper{
+            display: flex;
+            flex-direction: column;
+            background-color: wheat;
+            align-items: center;
+            padding: 25px;
+            border-radius: 15px;
+            margin-top: 30vh;
+        }
+
+        h1{
+            font-size: 30px;
+        }
+
+        #message{
+            width: auto;
+            margin: 15px;
+            font-size: 20px;
+        }
+
+        #submit{
+            border: none;
+            background-color: cadetblue;
+            color: aliceblue;
+            font-size: 20px;
+            border-radius: 5px;
+            margin-bottom: 15px;
+            padding: 5px;
+        }
+
+        #deliver{
+            color: cadetblue;
+            font-size: 26px;
+            margin-top: 20px;
+        }
+
+    </style>
+
+</head>
+    <body>
+        <div class="wrapper">
+            <h1>A Message You Would Like To Pass</h1>
+            <input type="text" name="" id="message">
+            <button id="submit" onclick="submit()" >Submit!</button>
+            <strong>Last Message Delivered:</strong>
+            <strong id="deliver"></strong>
+        </div>
+
+        <script src="script.js"></script>
+
+    </body>
+</html>
