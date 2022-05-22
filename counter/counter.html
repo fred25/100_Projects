@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter</title>
+
+    <link rel="stylesheet" href="/reset.css">
+
+    <style>
+
+        html{
+            background-color: darkslategrey;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .wrapper{
+            background-color: darkcyan;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            box-shadow: 5px 5px 0 rgb(13, 22, 22);
+        }
+
+        .title{
+            font-family: Helvetica, Arial, sans-serif;
+            font-size: 50px;
+            color: aliceblue;
+        }
+
+        #counter{
+            font-family: Helvetica, Arial, sans-serif;
+            font-size: 200px;
+        }
+
+        button{
+            font-family: Helvetica, Arial, sans-serif;
+            font-size: 30px;
+            margin: 10px;
+            border: none;
+            background-color: darkslategray;
+            color: aliceblue;
+            padding: 10px;
+            border-radius: 15px;
+            transition: .5s;
+        }
+
+        button:hover{
+            transform: scale(105%);
+        }
+
+        .negative{
+            color: brown;
+        }
+
+        .positive{
+            color: darkolivegreen;
+        }
+
+        .neutral{
+            color: rgb(49, 49, 49);
+        }
+
+    </style>
+
+</head>
+    <body>
+
+        <div class="wrapper">
+
+            <h1 class="title">COUNTER</h1>
+            <h1 id="counter">0</h1>
+            <div>
+                <button onclick="lowerCount()">Lower Count</button>
+                <button onclick="addCount()">Add Count</button>
+            </div>
+        </div>
+
+        <script src="script.js"></script>
+
+    </body>
+</html>
